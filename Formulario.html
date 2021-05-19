@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulario de contacto</title>
+        <link rel="stylesheet" type="text/css" href="menu.css">
+    </head>
+    <body bgcolor="Cornsilk">
+        <header style="text-align:center; font-family:verdana;font-size:150%">¡Déjanos un comentario!</header>
+        <hr color="Coral" size="10px">
+        <header id="header">
+            <ul class="nav">
+                <li><a href="#">Galería de imágenes</a></li>
+                <li><a href="index.html">Página principal</a></li>
+                <li><a href="#">Formulario de contacto</a></li>
+            </ul>
+        </header>
+        <br> <br> <br> <br>
+        <div style="margin: 0 auto; width: 1100px" align="center">
+            <section style="background-color: Lavender; width:50%; height:50%;">
+                <form name="contact" method="POST" data-netlify="true" align="center">
+                    <fieldset>
+                        <legend style="text-align: center;"><b>Tus datos:</b></legend>
+      
+                        <label for="txtnombre">Nombre completo:</label>
+                        <input type="text" id="txtnombre"> <br> <br>
+                        <label for="txtapellido">Apellidos:</label>
+                        <input type="text" id="txtapellido"> <br> <br>
+
+                        <label for="correo">Correo electrónico:</label>
+                        <input type="email" id="correo"> <br> <br>
+                        
+                        <legend><b>Opiniones y/o sugerencias: </b></legend> <br>
+
+                        <label for="Comentarios">¡Escribe  aquí tu comentario!</label> <br> <br>
+                        <textarea name="Comentarios" rows="10" cols="50"></textarea> <br> <br>
+                        
+                        <input type="submit" value="Enviar" onclick="alert('Datos enviados correctamente')"> <br> <br>
+
+                    </fieldset>
+                </form>
+            </section>
+        </div>
+    </body>
+</html>
